@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\a.saadat\\Desktop\\FileManager\\FileManager\\Product.csproj": {}
+    "C:\\Users\\a.saadat\\Desktop\\NewNOE\\FileManager\\FileManager\\Product.csproj": {}
   },
   "projects": {
-    "C:\\Users\\a.saadat\\Desktop\\FileManager\\FileManager\\Product.csproj": {
+    "C:\\Users\\a.saadat\\Desktop\\NewNOE\\FileManager\\FileManager\\Product.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\a.saadat\\Desktop\\FileManager\\FileManager\\Product.csproj",
+        "projectUniqueName": "C:\\Users\\a.saadat\\Desktop\\NewNOE\\FileManager\\FileManager\\Product.csproj",
         "projectName": "Product",
-        "projectPath": "C:\\Users\\a.saadat\\Desktop\\FileManager\\FileManager\\Product.csproj",
+        "projectPath": "C:\\Users\\a.saadat\\Desktop\\NewNOE\\FileManager\\FileManager\\Product.csproj",
         "packagesPath": "C:\\Users\\a.saadat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\a.saadat\\Desktop\\FileManager\\FileManager\\obj\\",
+        "outputPath": "C:\\Users\\a.saadat\\Desktop\\NewNOE\\FileManager\\FileManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a.saadat\\AppData\\Roaming\\NuGet\\NuGet.Config"

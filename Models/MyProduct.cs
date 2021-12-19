@@ -10,7 +10,7 @@ namespace Product.Models
           public string? Name { get; set; }
           public decimal Price { get; set; }
           public DateTime DataCreated { get; set; }
-          public byte ImportFile { get; set; }
+          public Byte[] AttachmentFile { get; set; }
 
      }
 }

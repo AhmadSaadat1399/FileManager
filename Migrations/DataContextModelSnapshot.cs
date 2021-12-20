@@ -22,6 +22,30 @@ namespace Product.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("FileManager.Models.AttachmentFile", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DateCreation")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("FileName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<byte[]>("MyPathFile")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("attachmentFiles");
+                });
+
             modelBuilder.Entity("Product.Models.MyProduct", b =>
                 {
                     b.Property<int>("ProductId")
@@ -30,11 +54,12 @@ namespace Product.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProductId"));
 
+                    b.Property<byte[]>("AttachmentFile")
+                        .IsRequired()
+                        .HasColumnType("bytea");
+
                     b.Property<DateTime>("DataCreated")
                         .HasColumnType("timestamp with time zone");
-
-                    b.Property<byte>("ImportFile")
-                        .HasColumnType("smallint");
 
                     b.Property<string>("Name")
                         .HasColumnType("text");
